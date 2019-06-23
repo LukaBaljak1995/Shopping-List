@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment">
+
+    <Button
+        android:id="@+id/buttonList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:visibility="gone"
+        android:text="LISTA"/>
+
+    <Button
+        android:id="@+id/buttonSlideShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:visibility="gone"
+        android:text="SLIDESHOW"
+        android:layout_marginTop="600dp"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:scrollbars="vertical"
+        android:tooltipText="Yass"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/slideshowRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:scrollbars="horizontal"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/emptyListView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlurGray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Added shopping items will appear here!"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

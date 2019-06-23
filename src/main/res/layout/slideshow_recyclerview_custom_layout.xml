@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_border">
+
+        <ImageView
+            android:id="@+id/imageSlideShow"
+            android:layout_width="match_parent"
+            android:layout_height="360dp" />
+
+        <TextView
+            android:id="@+id/descriptionSlideShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSlideShow"
+            android:layout_marginLeft="20dp"
+            android:text="Description:" />
+
+        <Button
+            android:id="@+id/editShoppingItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:background="@color/colorAccent"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/deleteShoppingItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="180dp"
+            android:background="@color/colorAccent"
+            android:text="DELETE" />
+
+        <ImageButton
+            android:id="@+id/rightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageButton
+            android:id="@+id/leftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:gravity="right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dismissSlideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_exit_list" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
